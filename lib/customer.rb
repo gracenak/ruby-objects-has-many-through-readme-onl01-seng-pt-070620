@@ -29,6 +29,7 @@ class Customer
       meal.waiter
     end
   end
+
   
   def new_meal(waiter, total, tip = 0)
     Meal.new(waiter, self, total, tip)
@@ -50,9 +51,5 @@ class Customer
     end
     oldest_customer
   end
-  
-end
-  
-  
   
 end
