@@ -19,7 +19,7 @@ class Waiter
   end
   
   def meals
-    Meal.all.select do |meal|meal.water == self
+    Meal.all.select do {|meal|meal.water == self}
   end
 end
 
